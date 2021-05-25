@@ -4,7 +4,7 @@ const FILES_TO_CACHE = [
   "/",
   "./index.html",
   "./manifest.webmanifest",
-  "./style.css",
+  "./styles.css",
   "./db.js",
   "./index.js",
 
@@ -16,7 +16,7 @@ self.addEventListener("install", function (evt) {
   evt.waitUntil(
     caches.open(DATA_CACHE_NAME).then((cache) => {
       console.log(cache);
-      cache.add("./icons")
+      cache.add("./icons/icon-192x192.png")
     }));
     
     
